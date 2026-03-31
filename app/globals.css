@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
+  /* Warna Dasar */
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Tambahkan Variabel Warna Custom Kamu di sini */
+  --primary: #1E3A8A;   /* Biru */
+  --secondary: #FACC15; /* Kuning */
 }
 
 @theme inline {
@@ -10,12 +15,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Daftarkan agar bisa dipanggil dengan class 'bg-primary' atau 'text-secondary' */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
 }
 
+/* Bagian dark mode bisa kamu sesuaikan atau biarkan default */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    /* Jika ingin warna biru/kuning tetap sama di dark mode, tidak perlu diubah di sini */
   }
 }
 
