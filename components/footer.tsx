@@ -7,9 +7,18 @@ export const Footer = () => (
             Let's Build <br /> The Next <span className="text-blue-300 underline underline-offset-4 decoration-1">System.</span>
           </h2>
           <div className="flex flex-col gap-2 font-black uppercase italic tracking-wider text-xl">
-            <a href="#" className="hover:text-blue-300 transition-colors w-fit">LinkedIn</a>
-            <a href="#" className="hover:text-blue-300 transition-colors w-fit">Github</a>
-            <a href="mailto:jaka@example.com" className="hover:text-blue-300 transition-colors w-fit">Email</a>
+            <a href="#" className="hover:text-blue-300 transition-colors w-fit">
+              LinkedIn
+            </a>
+            <a href="https://github.com/jaka-kurnia" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors w-fit">
+              Github
+            </a>
+            <a href="mailto:kurniajakaa@gmail.com" className="hover:text-blue-300 transition-colors w-fit">
+              Email
+            </a>
+            <a href="https://wa.me/081220398291" target="_blank" className="hover:text-blue-300 transition-colors w-fit">
+              WhatsApp
+            </a>
           </div>
         </div>
         <div className="md:text-right flex flex-col md:justify-between">
