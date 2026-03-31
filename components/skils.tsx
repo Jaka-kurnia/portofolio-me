@@ -17,7 +17,7 @@ export const Skills = () => (
           Expertise
         </motion.div>
         <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none">
-          Technical <span className="text-[#0055FF]">Arsenal.</span>
+          Technical <span className="text-[#0055FF]">Skills.</span>
         </motion.h2>
       </header>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
