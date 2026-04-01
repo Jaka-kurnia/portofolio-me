@@ -12,7 +12,7 @@ export const About = () => {
           {/* lg:sticky agar hanya melayang di layar besar */}
           <div className="lg:col-span-5 lg:sticky lg:top-32">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8">
-              <span className="text-[#0055FF] font-black text-lg md:text-xl italic tracking-tighter">01/</span>
+              <span className="text-[#0055FF] font-black text-lg md:text-xl italic tracking-tighter">01</span>
               <div className="flex items-center gap-3 text-[#0055FF] font-black text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.5em]">
                 <div className="w-6 md:w-8 h-px bg-[#0055FF]"></div>
                 The Narrative

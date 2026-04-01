@@ -39,7 +39,7 @@ export const Hero = () => (
           transition={{ delay: 0.6, duration: 1 }} 
           className="text-base md:text-2xl text-blue-100 max-w-xl font-medium leading-relaxed italic"
         >
-          "Membangun infrastruktur digital yang kokoh dengan presisi akademik Manajemen Informatika."
+          "Engineering solid digital infrastructures through the lens of Informatics Management precision."
         </motion.p>
         
         <motion.div

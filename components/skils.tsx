@@ -2,10 +2,30 @@ import { motion } from "framer-motion";
 import { Server, Layout, Zap, Cpu } from "lucide-react";
 
 const skills = [
-  { category: "Backend Core", icon: <Server size={32} />, items: ["Laravel", "PHP 8.x", "MySQL", "RESTful API"], desc: "Membangun arsitektur server yang scalable dan aman." },
-  { category: "Frontend Stack", icon: <Layout size={32} />, items: ["Next.js 15", "React", "Tailwind CSS", "Bootstrap"], desc: "Interface modern dengan performa SEO terbaik." },
-  { category: "Mobile Dev", icon: <Zap size={32} />, items: ["Flutter", "Dart"], desc: "Pengembangan aplikasi lintas platform yang responsif." },
-  { category: " Tools", icon: <Cpu size={32} />, items: ["Vs code","Android Studio", "MySQL Workbench", "Postman", "Git"], desc: "Efisiensi alur kerja dan manajemen sistem yang presisi." },
+  {
+    category: "Backend Core",
+    icon: <Server size={32} />,
+    items: ["Laravel", "PHP 8.x", "MySQL", "RESTful API"],
+    desc: "Building scalable and secure server architectures.",
+  },
+  {
+    category: "Frontend Stack",
+    icon: <Layout size={32} />,
+    items: ["Next.js 15", "React", "Tailwind CSS", "Bootstrap"],
+    desc: "Modern UI design optimized for maximum SEO performance.",
+  },
+  {
+    category: "Mobile Dev",
+    icon: <Zap size={32} />,
+    items: ["Flutter", "Dart"],
+    desc: "Building high-performance, responsive cross-platform apps.",
+  },
+  {
+    category: " Tools",
+    icon: <Cpu size={32} />,
+    items: ["Vs code", "Android Studio", "MySQL Workbench", "Postman", "Git"],
+    desc: "Optimizing workflow efficiency with precise system management.",
+  },
 ];
 
 export const Skills = () => (
@@ -13,6 +33,7 @@ export const Skills = () => (
     <div className="max-w-350 mx-auto">
       <header className="mb-16">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex items-center gap-4 text-[#0055FF] font-black text-[11px] uppercase tracking-[0.5em] mb-4">
+          <span className="text-[#0055FF] font-black text-lg md:text-xl italic tracking-tighter">02</span>
           <div className="w-12 h-0.5 bg-[#0055FF]"></div>
           Expertise
         </motion.div>
