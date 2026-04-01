@@ -6,7 +6,7 @@ export const About = () => {
       {/* Background Accent - Diperkecil sizenya di mobile biar nggak nutupin teks */}
       <div className="absolute top-5 md:top-10 right-[-10%] md:right-[-5%] text-[25vw] md:text-[15vw] font-black text-slate-50 select-none leading-none z-0 italic uppercase opacity-50 md:opacity-100">Passion</div>
 
-      <div className="max-w-[1400px] mx-auto relative z-10">
+      <div className="max-w-350 mx-auto relative z-10">
         <div className="grid lg:grid-cols-12 gap-10 md:gap-20 items-start">
           {/* LEFT SIDE: Heading & Index */}
           {/* lg:sticky agar hanya melayang di layar besar */}
@@ -14,7 +14,7 @@ export const About = () => {
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8">
               <span className="text-[#0055FF] font-black text-lg md:text-xl italic tracking-tighter">01/</span>
               <div className="flex items-center gap-3 text-[#0055FF] font-black text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.5em]">
-                <div className="w-6 md:w-8 h-[1px] bg-[#0055FF]"></div>
+                <div className="w-6 md:w-8 h-px bg-[#0055FF]"></div>
                 The Narrative
               </div>
             </motion.div>
@@ -41,7 +41,7 @@ export const About = () => {
                 {/* Petik dua dihilangkan di mobile agar teks tidak terdorong terlalu jauh */}
                 <span className="hidden md:block absolute -left-8 top-0 text-6xl text-[#0055FF]/10 font-serif">“</span>
                 <p className="text-xl md:text-3xl text-slate-800 leading-snug md:leading-tight font-bold italic tracking-tight">
-                  Hello everyone, I am Jaka Kurnia and I am a <span className="text-[#0055FF]">Junior Software Engineer</span> pursuing a degree in <span className="underline decoration-[#FFD700] decoration-4 md:decoration-8 underline-offset-[-2px]">Informatics Management</span>.
+                  Hello everyone, I am Jaka Kurnia and I am a <span className="text-[#0055FF]">Junior Software Engineer</span> pursuing a degree in <span className="underline decoration-[#FFD700] decoration-4 md:decoration-8 -underline-offset-2">Informatics Management</span>.
                 </p>
               </div>
 

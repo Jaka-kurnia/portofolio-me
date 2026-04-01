@@ -7,7 +7,7 @@ export const Hero = () => (
          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}>
     </div>
 
-    <div className="max-w-[1600px] mx-auto w-full grid lg:grid-cols-12 gap-12 md:gap-10 items-center relative z-10">
+    <div className="max-w-400 mx-auto w-full grid lg:grid-cols-12 gap-12 md:gap-10 items-center relative z-10">
       
       {/* --- TEXT CONTENT --- */}
       <div className="lg:col-span-7 order-1 lg:order-1 space-y-8 md:space-y-12">
@@ -17,7 +17,7 @@ export const Hero = () => (
           transition={{ duration: 1 }} 
           className="flex items-center gap-4 text-white/60 font-black text-[10px] md:text-[11px] uppercase tracking-[0.4em] md:tracking-[0.5em]"
         >
-          <div className="w-10 md:w-12 h-[2px] bg-white/40"></div>
+          <div className="w-10 md:w-12 h-0.5 bg-white/40"></div>
           Full Stack Web Developer
         </motion.div>
 
@@ -60,7 +60,7 @@ export const Hero = () => (
           initial={{ scale: 0.9, opacity: 0 }} 
           animate={{ scale: 1, opacity: 1 }} 
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }} 
-          className="relative z-10 aspect-[4/5] sm:aspect-square lg:aspect-[4/5] w-full max-w-[350px] sm:max-w-[400px] lg:max-w-none mx-auto bg-white overflow-hidden group border-[1px] border-white/20 shadow-2xl"
+          className="relative z-10 aspect-4/5 sm:aspect-square lg:aspect-4/5 w-full max-w-87.5 sm:max-w-100 lg:max-w-none mx-auto bg-white overflow-hidden group border border-white/20 shadow-2xl"
         >
           <img 
             src="/saya-min.jpg" 
@@ -69,7 +69,7 @@ export const Hero = () => (
           />
         </motion.div>
         
-        <div className="absolute bottom-[-5%] right-[-5%] text-[12vw] font-black text-white/[0.05] leading-none select-none italic tracking-tighter uppercase hidden xl:block z-0 pointer-events-none">
+        <div className="absolute bottom-[-5%] right-[-5%] text-[12vw] font-black text-white/5 leading-none select-none italic tracking-tighter uppercase hidden xl:block z-0 pointer-events-none">
           SOFTWARE ENGINEER
         </div>
       </div>

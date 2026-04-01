@@ -10,10 +10,10 @@ const skills = [
 
 export const Skills = () => (
   <section id="skills" className="py-24 px-8 bg-white overflow-hidden">
-    <div className="max-w-[1400px] mx-auto">
+    <div className="max-w-350 mx-auto">
       <header className="mb-16">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex items-center gap-4 text-[#0055FF] font-black text-[11px] uppercase tracking-[0.5em] mb-4">
-          <div className="w-12 h-[2px] bg-[#0055FF]"></div>
+          <div className="w-12 h-0.5 bg-[#0055FF]"></div>
           Expertise
         </motion.div>
         <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none">

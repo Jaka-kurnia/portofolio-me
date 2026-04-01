@@ -11,12 +11,12 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-[100] bg-[#0055FF]/10 backdrop-blur-lg border-b border-white/10">
-      <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-6 flex flex-row-reverse md:flex-row justify-between items-center text-white">
+    <nav className="fixed top-0 w-full z-100 bg-[#0055FF]/10 backdrop-blur-lg border-b border-white/10">
+      <div className="max-w-400 mx-auto px-8 md:px-12 py-6 flex flex-row-reverse md:flex-row justify-between items-center text-white">
         
         {/* HAMBURGER (Kiri di Mobile, Hilang di Desktop) */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="relative z-[110] p-2">
+          <button onClick={() => setIsOpen(!isOpen)} className="relative z-110 p-2">
             <div className="flex flex-col gap-1.5 w-6">
               <motion.span animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }} className="w-full h-0.5 bg-white block" />
               <motion.span animate={isOpen ? { opacity: 0 } : { opacity: 1 }} className="w-full h-0.5 bg-white block" />
@@ -49,7 +49,7 @@ export const Navbar = () => {
               animate="opened"
               exit="closed"
               variants={menuVariants}
-              className="fixed inset-0 w-full h-screen bg-[#0055FF] flex flex-col justify-center items-center gap-8 z-[105]"
+              className="fixed inset-0 w-full h-screen bg-[#0055FF] flex flex-col justify-center items-center gap-8 z-105"
             >
               {["About", "Skills", "Projects", "Contact"].map((item) => (
                 <a 

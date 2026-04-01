@@ -1,6 +1,6 @@
 export const Footer = () => (
   <footer id="contact" className="bg-[#0055FF] text-white pt-20 pb-12 px-8">
-    <div className="max-w-[1400px] mx-auto">
+    <div className="max-w-350 mx-auto">
       <div className="grid md:grid-cols-2 gap-12 border-b border-white/10 pb-16">
         <div className="space-y-8">
           <h2 className="text-5xl md:text-6xl font-black uppercase italic tracking-tighter leading-tight">
