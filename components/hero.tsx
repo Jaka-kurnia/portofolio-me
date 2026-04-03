@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => (
-  <section id="hero" className="relative min-h-screen flex items-center px-6 md:px-20 bg-[#0055FF] overflow-hidden pt-32 pb-20 md:pt-20 text-white">
+  <section 
+    id="hero" 
+    className="relative min-h-screen flex items-center px-6 md:px-20 bg-[#0055FF] dark:bg-[#0B1120] overflow-hidden pt-32 pb-20 md:pt-20 text-white transition-colors duration-500"
+  >
     
-    <div className="absolute inset-0 opacity-10 pointer-events-none" 
+    {/* Grid Pattern: Jadi lebih redup di dark mode agar teks tetap kontras */}
+    <div className="absolute inset-0 opacity-10 dark:opacity-[0.03] pointer-events-none" 
          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}>
     </div>
 
@@ -15,9 +19,9 @@ export const Hero = () => (
           initial={{ opacity: 0, x: -20 }} 
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 1 }} 
-          className="flex items-center gap-4 text-white/60 font-black text-[10px] md:text-[11px] uppercase tracking-[0.4em] md:tracking-[0.5em]"
+          className="flex items-center gap-4 text-white/60 dark:text-blue-400 font-black text-[10px] md:text-[11px] uppercase tracking-[0.4em] md:tracking-[0.5em]"
         >
-          <div className="w-10 md:w-12 h-0.5 bg-white/40"></div>
+          <div className="w-10 md:w-12 h-0.5 bg-white/40 dark:bg-blue-500/40"></div>
           Full Stack Web Developer
         </motion.div>
 
@@ -28,7 +32,7 @@ export const Hero = () => (
           className="text-[15vw] sm:text-[13vw] lg:text-[9.5vw] font-black leading-[0.85] md:leading-[0.8] tracking-[-0.05em] md:tracking-[-0.07em] uppercase italic"
         >
           Software <br />
-          <span style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.3)", color: "transparent" }}>
+          <span className="text-transparent" style={{ WebkitTextStroke: "1px rgba(255, 255, 255, 0.3)" }}>
             Engineer
           </span>
         </motion.h1>
@@ -37,7 +41,7 @@ export const Hero = () => (
           initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }} 
           transition={{ delay: 0.6, duration: 1 }} 
-          className="text-base md:text-2xl text-blue-100 max-w-xl font-medium leading-relaxed italic"
+          className="text-base md:text-2xl text-blue-100 dark:text-slate-400 max-w-xl font-medium leading-relaxed italic"
         >
           "Engineering solid digital infrastructures through the lens of Informatics Management precision."
         </motion.p>
@@ -48,7 +52,7 @@ export const Hero = () => (
           transition={{ delay: 0.8 }}
           className="pt-4"
         >
-            <a href="#projects" className="inline-block px-8 py-4 bg-white text-[#0055FF] rounded-full font-bold uppercase text-[11px] tracking-widest hover:bg-[#FFD700] hover:text-black transition-all transform hover:scale-105 shadow-lg">
+            <a href="#projects" className="inline-block px-8 py-4 bg-white dark:bg-[#0055FF] text-[#0055FF] dark:text-white rounded-full font-bold uppercase text-[11px] tracking-widest hover:bg-[#FFD700] hover:text-black transition-all transform hover:scale-105 shadow-lg">
                 View My Projects
             </a>
         </motion.div>
@@ -60,7 +64,7 @@ export const Hero = () => (
           initial={{ scale: 0.9, opacity: 0 }} 
           animate={{ scale: 1, opacity: 1 }} 
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }} 
-          className="relative z-10 aspect-4/5 sm:aspect-square lg:aspect-4/5 w-full max-w-87.5 sm:max-w-100 lg:max-w-none mx-auto bg-white overflow-hidden group border border-white/20 shadow-2xl"
+          className="relative z-10 aspect-4/5 sm:aspect-square lg:aspect-4/5 w-full max-w-87.5 sm:max-w-100 lg:max-w-none mx-auto bg-white dark:bg-slate-800 overflow-hidden group border border-white/20 dark:border-white/10 shadow-2xl"
         >
           <img 
             src="/saya-min.jpg" 
@@ -69,7 +73,8 @@ export const Hero = () => (
           />
         </motion.div>
         
-        <div className="absolute bottom-[-5%] right-[-5%] text-[12vw] font-black text-white/5 leading-none select-none italic tracking-tighter uppercase hidden xl:block z-0 pointer-events-none">
+        {/* Background Text: Jadi lebih subtle di dark mode */}
+        <div className="absolute bottom-[-5%] right-[-5%] text-[12vw] font-black text-white/5 dark:text-white/2 leading-none select-none italic tracking-tighter uppercase hidden xl:block z-0 pointer-events-none">
           SOFTWARE ENGINEER
         </div>
       </div>

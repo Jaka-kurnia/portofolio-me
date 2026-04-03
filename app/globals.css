@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  /* Warna Dasar */
+  /* Default Light Mode */
   --background: #ffffff;
   --foreground: #171717;
-  
-  /* Tambahkan Variabel Warna Custom Kamu di sini */
   --primary: #1E3A8A;   /* Biru */
   --secondary: #FACC15; /* Kuning */
+}
+
+/* KUNCI: Gunakan selector .dark supaya nurut sama Toggle */
+.dark {
+  --background: #0a0a0a; /* Warna background saat mode gelap */
+  --foreground: #ededed;
+  /* Lo bisa ubah --primary di sini kalau mau birunya beda di dark mode */
 }
 
 @theme inline {
@@ -15,23 +20,14 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-
-  /* Daftarkan agar bisa dipanggil dengan class 'bg-primary' atau 'text-secondary' */
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-}
-
-/* Bagian dark mode bisa kamu sesuaikan atau biarkan default */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    /* Jika ingin warna biru/kuning tetap sama di dark mode, tidak perlu diubah di sini */
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Pakai variabel font Geist biar lebih modern sesuai setup layout.tsx lo */
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
