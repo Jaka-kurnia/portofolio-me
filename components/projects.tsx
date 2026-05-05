@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 
+
 const projects = [
+  { title: "E-Maintenance", category: "Web App", tech: ["Laravel", "React", "Redux", "Tailwind"], desc: "Aplikasi berbasis web untuk memudahkan perusahaan dalam mengelola pemeliharaan aset.", img: "/e-maintenance.png" },
   { title: "CMS Wareg Tasik", category: "Infrastructure", tech: ["Laravel", "Filament", "Next.js", "Tailwind"], desc: "Manajemen konten terpusat untuk platform kuliner Tasikmalaya.", img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070" },
   { title: "Sistem Presensi", category: "Web App", tech: ["Next.js", "Laravel"], desc: "Pelacakan kehadiran real-time dengan dashboard analitik presisi.", img: "https://images.unsplash.com/photo-1454165833767-131435bb4496?q=80&w=2070" },
   { title: "POS Warung", category: "Management", tech: ["Laravel", "Tailwind"], desc: "Aplikasi Point of Sale terintegrasi untuk efisiensi UMKM.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070" },
+
 ];
 
 export const Projects = () => (
